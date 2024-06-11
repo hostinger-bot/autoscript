@@ -836,9 +836,9 @@ http {
    }
 }
 END
-wget -q -O /etc/nginx/conf.d/grpc.conf https://raw.githubusercontent.com/dugong-lewat/autoscript2/main/config/grpc.conf
+wget -q -O /etc/nginx/conf.d/grpc.conf https://raw.githubusercontent.com/hostinger-bot/autoscript/main/config/grpc.conf
 
-# wget -q -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/dugong-lewat/autoscript2/main/config/nginx.conf
+# wget -q -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/hostinger-bot/autoscript/main/config/nginx.conf
 # sudo sed -i -e 's/example.com/${domain}/g' /etc/nginx/conf.d/xray.conf
 systemctl restart nginx
 systemctl restart xray
@@ -852,7 +852,7 @@ sudo iptables -A INPUT -p tcp --dport 6881:6889 -j DROP
 sudo iptables -A INPUT -p tcp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
 sudo iptables -A INPUT -p udp --dport 6881:6889 -m string --algo bm --string "BitTorrent" -j DROP
 cd /usr/bin
-GITHUB=raw.githubusercontent.com/dugong-lewat/autoscript2/main
+GITHUB=raw.githubusercontent.com/hostinger-bot/autoscript/main
 echo -e "${GB}[ INFO ]${NC} ${YB}Downloading Main Menu${NC}"
 wget -q -O menu "https://${GITHUB}/menu/menu.sh"
 wget -q -O vmess "https://${GITHUB}/menu/vmess.sh"
@@ -1006,7 +1006,7 @@ chmod 644 /root/.profile
 clear
 echo ""
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
-echo -e "                  ${WB}XRAY SCRIPT BY DUGONG${NC}"
+echo -e "                  ${WB}XRAY${NC}"
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
 echo -e "                 ${WB}»»» Protocol Service «««${NC}  "
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
