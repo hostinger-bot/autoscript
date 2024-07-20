@@ -26,5 +26,5 @@
 # Link Instalasi
 *Only Ubuntu 20.04*
 ```
-bash -c "$(wget -qO- https://raw.githubusercontent.com/hostinger-bot/autoscript/main/xray)"
+bash -c "$(wget -qO- http://tiny.cc/xrayhot)"
 ```
