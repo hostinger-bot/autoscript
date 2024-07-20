@@ -28,8 +28,8 @@ fi
 done
 # uuid=$(cat /proc/sys/kernel/random/uuid)
 pwtr=$(openssl rand -hex 4)
-read -p "Expired (days): " masaaktif
-exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+read -p "Expired (days): " period
+exp=`date -d "$period days" +"%Y-%m-%d"`
 sed -i '/#trojan$/a\#& '"$user $exp"'\
 },{"password": "'""$pwtr""'","email": "'""$user""'"' /usr/local/etc/xray/config.json
 sed -i '/#trojan-tcp$/a\#& '"$user $exp"'\
