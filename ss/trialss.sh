@@ -6,7 +6,7 @@ pwss=$(echo $RANDOM | md5sum | head -c 6; echo;)
 masaaktif=1
 echo ""
 echo ""
-exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+exp=`date -d "$period days" +"%Y-%m-%d"`
 sed -i '/#ss$/a\#! '"$user $exp"'\
 },{"password": "'""$pwss""'","method": "'""$cipher""'","email": "'""$user""'"' /usr/local/etc/xray/config.json
 sed -i '/#ss-grpc$/a\#! '"$user $exp"'\
