@@ -1,10 +1,10 @@
 domain=$(cat /usr/local/etc/xray/domain)
 user=trial-`echo $RANDOM | head -c4`
 uuid=$(cat /proc/sys/kernel/random/uuid)
-masaaktif=1
+period=1
 echo ""
 echo ""
-exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+exp=`date -d "$period days" +"%Y-%m-%d"`
 sed -i '/#universal$/a\#= '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /usr/local/etc/xray/config.json
 sed -i '/#vless$/a\#= '"$user $exp"'\
