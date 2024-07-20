@@ -32,5 +32,5 @@ case $opt in
 5) clear ; cek-xray ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo -e "Wrong input " ; sleep 1 ; allxray ;;
+*) echo -e "${YB}Wrong input${NC}" ; sleep 1 ; allxray ;;
 esac
