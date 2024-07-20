@@ -33,7 +33,7 @@ DATE=$(date -R | cut -d " " -f -4)
 MYIP=$(curl -sS ipv4.icanhazip.com)
 clear
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e "               ${WB}----- [ Xray Script ] -----${NC}              "
+echo -e "               ${WB}----- [ Welcome Back ] -----${NC}              "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e " ${YB}Service Provider${NC} ${WB}: $ISP"
 echo -e " ${YB}Timezone${NC}         ${WB}: $WKT${NC}"
@@ -51,7 +51,7 @@ echo -e "    ${GB}↓↓ Down: $dtoday          ↓↓ Down: $dmon${NC}   "
 echo -e "    ${GB}↑↑ Up  : $utoday          ↑↑ Up  : $umon${NC}   "
 echo -e "    ${GB}≈ Total: $ttoday          ≈ Total: $tmon${NC}   "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e "                ${WB}----- [ Xray Menu ] -----${NC}               "
+echo -e "                ${WB}----- [ Menu ] -----${NC}               "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e " ${MB}[1]${NC} ${YB}Vmess Menu${NC}          ${MB}[5]${NC} ${YB}Shadowsocks 2022 Menu${NC}"
 echo -e " ${MB}[2]${NC} ${YB}Vless Menu${NC}          ${MB}[6]${NC} ${YB}All Xray Menu${NC}"
@@ -91,5 +91,5 @@ echo ""
 echo ""
 menu ;;
 x) exit ;;
-*) echo -e "${YB}salah input${NC}" ; sleep 1 ; menu ;;
+*) echo -e "${YB}Wrong input${NC}" ; sleep 1 ; menu ;;
 esac
