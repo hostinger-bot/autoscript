@@ -26,5 +26,5 @@
 # Link Instalasi
 *Recommended install on Ubuntu 20.04*
 ```
-bash -c "$(wget -qO- http://tiny.cc/xrayhot)"
+bash -c "$(wget -qO- http://tiny.cc/xrayhost)"
 ```
