@@ -34,5 +34,5 @@ case $opt in
 6) clear ; log-allxray ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo "${YB}Wrong input${NC}" ; sleep 0.5 ; log-create ;;
+*) echo "Wrong input" ; sleep 0.5 ; log-create ;;
 esac
