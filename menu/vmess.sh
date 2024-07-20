@@ -32,5 +32,5 @@ case $opt in
 5) clear ; cek-vmess ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
-*) echo -e "salah tekan " ; sleep 1 ; vmess ;;
+*) echo -e "${YB}Wrong input${NC}" ; sleep 1 ; vmess ;;
 esac
