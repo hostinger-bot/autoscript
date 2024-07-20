@@ -1,6 +1,6 @@
 domain=$(cat /usr/local/etc/xray/domain)
 user=trial-`echo $RANDOM | head -c4`
-masaaktif=1
+period=1
 domain=$(cat /usr/local/etc/xray/domain)
 cipher="aes-128-gcm"
 cipher2="2022-blake3-aes-128-gcm"
@@ -9,7 +9,7 @@ pwtr=$(openssl rand -hex 4)
 pwss=$(echo $RANDOM | md5sum | head -c 6; echo;)
 userpsk=$(openssl rand -base64 16)
 serverpsk=$(cat /usr/local/etc/xray/serverpsk)
-exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
+exp=`date -d "$period days" +"%Y-%m-%d"`
 sed -i '/#universal$/a\#&@ '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /usr/local/etc/xray/config.json
 sed -i '/#vmess$/a\#&@ '"$user $exp"'\
