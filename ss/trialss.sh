@@ -3,7 +3,7 @@ user=trial-`echo $RANDOM | head -c4`
 cipher="aes-128-gcm"
 # uuid=$(cat /proc/sys/kernel/random/uuid)
 pwss=$(echo $RANDOM | md5sum | head -c 6; echo;)
-masaaktif=1
+period=1
 echo ""
 echo ""
 exp=`date -d "$period days" +"%Y-%m-%d"`
