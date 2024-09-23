@@ -2,7 +2,7 @@ domain=$(cat /usr/local/etc/xray/domain)
 user=trial-`echo $RANDOM | head -c4`
 # uuid=$(cat /proc/sys/kernel/random/uuid)
 pwtr=$(openssl rand -hex 4)
-period=1
+period=7
 echo ""
 echo ""
 exp=`date -d "$period days" +"%Y-%m-%d"`
