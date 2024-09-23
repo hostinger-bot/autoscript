@@ -1,5 +1,5 @@
 
-# Service
+## Service
 |  SERVICE  |  PORT  |
 |---------- |--------|
 | Vmess WS CDN TLS | 443 |
@@ -23,8 +23,13 @@
 | Auto Delete Expired User| ✅ |
 | DNS Setting | ✅ |
 
-# Link Instalasi
+## Installation Link
 *Recommended install on Ubuntu 20.04*
 ```
 bash -c "$(wget -qO- http://xrayhost.us.kg/install.sh)"
 ```
+
+## Free Domain
+Looking for a free domain for your project? Sign up easily at [NIC US KG](https://nic.us.kg) and get your domain today!
+
+[![Register](https://img.shields.io/badge/Register-Free%20Domain-brightgreen)](https://nic.us.kg)
