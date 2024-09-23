@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Documentation</title>
+    <title>Autoscript Documentation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -48,19 +49,34 @@
             padding: 10px;
             border-radius: 4px;
             overflow-x: auto;
+            position: relative;
         }
-        ul {
-            padding-left: 20px;
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #f6f8fa;
+            border: 1px solid #eaecef; 
+            color: #333;
+            padding: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
         }
-        li {
-            margin: 5px 0;
+        .copy-button:hover {
+            background-color: #eaecef; 
+        }
+        .material-icons {
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Service Documentation</h1>
+        <h1>Documentation</h1>
 
         <h2>Service Ports</h2>
         <table>
@@ -150,7 +166,12 @@
 
         <h2>Installation Link</h2>
         <p>Recommended install on Ubuntu 20.04</p>
-        <pre><code>bash -c "$(wget -qO- http://xrayhost.us.kg/install.sh)"</code></pre>
+        <div style="position: relative;">
+            <pre><code id="install-command">bash -c "$(wget -qO- http://xrayhost.us.kg/install.sh)"</code></pre>
+            <button class="copy-button" onclick="copyToClipboard()">
+                <span class="material-icons">content_copy</span>
+            </button>
+        </div>
 
         <h2>Free Domain</h2>
         <p>If you’re looking for a free domain for your project, sign up easily at <a href="https://nic.us.kg" target="_blank">NIC US KG</a> and get your domain today!</p>
@@ -160,6 +181,17 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script>
+        hljs.highlightAll();
+
+        function copyToClipboard() {
+            const command = document.getElementById('install-command').innerText;
+            navigator.clipboard.writeText(command).then(() => {
+                alert('Command copied to clipboard!');
+            }).catch(err => {
+                alert('Failed to copy: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
