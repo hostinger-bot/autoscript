@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Documentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/default.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+            border: 1px solid #eaecef;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #eaecef;
+            text-align: left;
+        }
+        th {
+            background-color: #f6f8fa;
+        }
+        code {
+            background-color: #f6f8fa;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f6f8fa;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Service Documentation</h1>
+
+        <h2>Service Ports</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Port</th>
+            </tr>
+            <tr>
+                <td>Vmess WS CDN TLS</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Vmess WS CDN</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Vmess gRPC</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Vless WS CDN TLS</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Vless WS CDN</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Vless XTLS Vision</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Vless gRPC</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Trojan WS CDN TLS</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Trojan WS CDN</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Trojan TCP TLS</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Trojan gRPC</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Shadowsocks WS CDN TLS</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Shadowsocks WS CDN</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Shadowsocks gRPC</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Shadowsocks 2022 WS CDN TLS</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Shadowsocks 2022 WS CDN</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Shadowsocks 2022 gRPC</td>
+                <td>443</td>
+            </tr>
+            <tr>
+                <td>Nginx (Reverse Proxy)</td>
+                <td>443</td>
+            </tr>
+        </table>
+
+        <h2>Additional Features</h2>
+        <ul>
+            <li>Auto Delete Expired User: ✅</li>
+            <li>DNS Setting: ✅</li>
+        </ul>
+
+        <h2>Installation Link</h2>
+        <p>Recommended install on Ubuntu 20.04</p>
+        <pre><code>bash -c "$(wget -qO- http://tiny.cc/xrayhost)"</code></pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
