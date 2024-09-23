@@ -3,7 +3,7 @@ user=trial-`echo $RANDOM | head -c4`
 cipher2="2022-blake3-aes-128-gcm"
 userpsk=$(openssl rand -base64 16)
 serverpsk=$(cat /usr/local/etc/xray/serverpsk)
-period=1
+period=7
 echo ""
 echo ""
 exp=`date -d "$period days" +"%Y-%m-%d"`
