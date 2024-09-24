@@ -26,7 +26,7 @@
 ## Installation Link
 *Recommended install on Ubuntu 20.04*
 ```
-bash -c "$(wget -qO- http://xrayhost.us.kg/install.sh)"
+bash -c "$(wget -qO- https://xrayhost.us.kg/install.sh)"
 ```
 
 ## Free Domain
