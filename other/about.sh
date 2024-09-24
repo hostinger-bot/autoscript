@@ -8,6 +8,7 @@ MB='\e[35;1m'
 CB='\e[35;1m'
 WB='\e[37;1m'
 clear
+
 echo ""
 echo ""
 echo -e "${BB}—————————————————————————————————————————————————————————${NC}"
@@ -32,6 +33,9 @@ echo -e "  ${YB}- Shadowsocks gRPC${NC}            : ${YB}443${NC}"
 echo -e "  ${YB}- Shadowsocks 2022 WS CDN TLS${NC} : ${YB}443${NC}"
 echo -e "  ${YB}- Shadowsocks 2022 WS CDN${NC}     : ${YB}80${NC}"
 echo -e "  ${YB}- Shadowsocks 2022 gRPC${NC}       : ${YB}443${NC}"
+echo -e "${BB}————————————————————————————————————————————————————————${NC}"
+echo -e "\n${BB}Source:${NC} ${YB}https://xrayhost.us.kg${NC}"
+echo -e "${BB}Link:${NC} ${YB}https://xrayhost.us.kg/install.sh${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
