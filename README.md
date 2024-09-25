@@ -38,3 +38,6 @@ Looking for a free domain for your project? Sign up easily at [NIC US KG](https:
 Don't forget to star and fork the repository!
 [![Star](https://img.shields.io/github/stars/hostinger-bot/autoscript?style=social)](https://github.com/hostinger-bot/autoscript)
 [![Fork](https://img.shields.io/github/forks/hostinger-bot/autoscript?style=social)](https://github.com/hostinger-bot/autoscript/fork)
+
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/hostinger-bot/autoscript.svg?variant=adaptive)](https://starchart.cc/hostinger-bot/autoscript)
