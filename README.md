@@ -1,7 +1,7 @@
 
 ## Service
 |  SERVICE  |  PORT  |
-|---------- |--------|
+|-----------|--------|
 | Vmess WS CDN TLS | 443 |
 | Vmess WS CDN | 80 |
 | Vmess gRPC  | 443 |
@@ -19,8 +19,8 @@
 | Shadowsocks 2022 WS CDN TLS | 443 |
 | Shadowsocks 2022 WS CDN | 80 |
 | Shadowsocks 2022 gRPC  | 443 |
-| Nginx| 443 (Reverse Proxy) |
-| Auto Delete Expired User| ✅ |
+| Nginx (Reverse Proxy) | 443 |
+| Auto Delete Expired User | ✅ |
 | DNS Setting | ✅ |
 
 ## Installation Link
@@ -33,3 +33,8 @@ bash -c "$(wget -qO- https://xrayhost.us.kg/install.sh)"
 Looking for a free domain for your project? Sign up easily at [NIC US KG](https://nic.us.kg) and get your domain today!
 
 [![Register](https://img.shields.io/badge/Register-Free%20Domain-brightgreen)](https://nic.us.kg)
+
+## Source Code
+Don't forget to star and fork the repository!
+[![Star](https://img.shields.io/github/stars/hostinger-bot/autoscript?style=social)](https://github.com/hostinger-bot/autoscript)
+[![Fork](https://img.shields.io/github/forks/hostinger-bot/autoscript?style=social)](https://github.com/hostinger-bot/autoscript/fork)
