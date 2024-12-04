@@ -46,7 +46,7 @@ echo "Google DNS" > /user/current
 rm /usr/local/etc/xray/city >> /dev/null 2>&1
 rm /usr/local/etc/xray/org >> /dev/null 2>&1
 rm /usr/local/etc/xray/timezone >> /dev/null 2>&1
-bash -c "$(curl -L https://raw.githubusercontent.com/XTLS/Xray-install/refs/heads/main/install-release.sh)" - install --beta
+bash -c "$(curl -L https://raw.githubusercontent.com/hostinger-bot/autoscript/main/xray/installer.sh)" - install --beta
 curl -s ipinfo.io/city >> /usr/local/etc/xray/city
 curl -s ipinfo.io/org | cut -d " " -f 2-10 >> /usr/local/etc/xray/org
 curl -s ipinfo.io/timezone >> /usr/local/etc/xray/timezone
